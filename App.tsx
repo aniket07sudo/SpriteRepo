@@ -46,7 +46,7 @@ type SectionProps = PropsWithChildren<{
 let GAME_FRAME = 0; // Not required to change
 let STAGERRED_FRAME = 1; // More the staggerred frame is , slower will be the animation
 let FRAME = 0; // Keep Track of the current Frame count
-let TOTAL_FRAMES = 60; // Oth based Indexing of Sprite Sequence
+let TOTAL_FRAMES = 118; // Oth based Indexing of Sprite Sequence
 let START_MARGIN = 90; // First Sequence is starting from 90px in Sequence Png Image if not use
 
 
@@ -111,7 +111,7 @@ const animate =  () => {
   GAME_FRAME++; 
   setTimeout(() => {
     requestAnimationFrame(animate);
-  }, 1000 / 40);
+  }, 1000 / 60);
   // requestAnimationFrame(animate); // Looping function for next Iteration of same function "animate()"
 }
  
